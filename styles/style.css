@@ -1,0 +1,114 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.red-hat-medium {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--desaturated-blue);
+  }
+  
+.red-hat-bold {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--dark-blue);
+  }
+  
+.red-hat-black {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--dark-blue);
+  }
+
+body {
+    min-height: 100dvh;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale-blue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+.order-card {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+.order-card > img {
+    width: 100%;
+    align-items: start;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.order-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+.order-info p {
+   text-align: center;
+}
+.order-plan {
+    width:100%;
+    padding: 15px;
+    background-color:var(--very-pale-blue);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 8px;
+    gap: 10px;
+}
+#change-plan {
+    color: var(--bright-blue);
+    margin-left: auto;
+    font-size: 13px;
+}
+.plan-info {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+.payment {
+    color: var(--very-pale-blue);
+    background-color: var(--bright-blue);
+    font-size: 12px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 4, 255, 0.25);
+    cursor: pointer;
+}
+.cancel a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+}
+.attribution {
+    color: var(--very-pale-blue);
+    font-size: 12px;
+}
